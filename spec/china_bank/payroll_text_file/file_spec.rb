@@ -1,35 +1,35 @@
 require 'spec_helper'
 
-describe ChinaBank::PayrollTextFile do
+describe ChinaBank::PayrollTextFile::File do
   describe "existing clients" do
     let(:file) {
-      described_class.generate account_type: "SA",
-                               account_number: "1850889513",
-                               bank_code: "102",
-                               transactions: [
-                                 {
-                                   account_type: "CA",
-                                   account_number: "2030347812",
-                                   bank_code: "102",
-                                   amount: BigDecimal("12965.50")
-                                 },
-                                 {
-                                   account_type: "SA",
-                                   account_number: "4031759684",
-                                   bank_code: "102",
-                                   amount: BigDecimal("10350.35")
-                                 },
-                                 {
-                                   account_type: "CA",
-                                   account_number: "110056741211",
-                                   amount: BigDecimal("9150.00")
-                                 },
-                                 {
-                                   account_type: "SA",
-                                   account_number: "110005377015",
-                                   amount: BigDecimal("21465.85")
-                                 }
-                               ]
+      described_class.new account_type: "SA",
+                          account_number: "1850889513",
+                          bank_code: "102",
+                          transactions: [
+                            {
+                              account_type: "CA",
+                              account_number: "2030347812",
+                              bank_code: "102",
+                              amount: BigDecimal("12965.50")
+                            },
+                            {
+                              account_type: "SA",
+                              account_number: "4031759684",
+                              bank_code: "102",
+                              amount: BigDecimal("10350.35")
+                            },
+                            {
+                              account_type: "CA",
+                              account_number: "110056741211",
+                              amount: BigDecimal("9150.00")
+                            },
+                            {
+                              account_type: "SA",
+                              account_number: "110005377015",
+                              amount: BigDecimal("21465.85")
+                            }
+                          ]
     }
 
     # File content:

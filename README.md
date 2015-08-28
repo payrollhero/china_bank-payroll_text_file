@@ -1,6 +1,11 @@
 # ChinaBank::PayrollTextFile
 
-A payroll text file generator for China Bank.
+[![Gem Version](https://badge.fury.io/rb/china_bank-payroll_text_file.svg)](http://badge.fury.io/rb/china_bank-payroll_text_file)
+[![Code Climate](https://codeclimate.com/github/payrollhero/china_bank-payroll_text_file/badges/gpa.svg)](https://codeclimate.com/github/payrollhero/china_bank-payroll_text_file)
+[![Build Status](https://travis-ci.org/payrollhero/china_bank-payroll_text_file.svg)](https://travis-ci.org/payrollhero/china_bank-payroll_text_file)
+
+A payroll text file generator for China Bank. This specifically supports the format [China Bank Auto
+Credit Arrangement (ACA)](http://www.chinabank.ph/business.aspx?title=China+Bank+Auto+Credit+Arrangement+%28ACA%29) requires.
 
 ## Installation
 
@@ -20,7 +25,21 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+    file = ChinaBank::PayrollTextFile.generate account_type: "SA",
+                                               account_number: "1850889513",
+                                               bank_code: "102",
+                                               transactions: [
+                                                 {
+                                                   account_type: "CA",
+                                                   account_number: "2030347812",
+                                                   bank_code: "102",
+                                                   amount: BigDecimal("12965.50")
+                                                 }
+                                               ]
+
+    file.content #=> "*CA2030347812   00000012965.50 C102*\r\n*SA1850889513   00000012965.50 D102*"
+```
 
 ## Development
 
