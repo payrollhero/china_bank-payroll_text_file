@@ -22,7 +22,7 @@ module ChinaBank
 
       # @return [Array<ChinaBank::PayrollTextFile::Line>
       def credit_lines
-        transactions.map { |transaction| Line.new transaction.merge(transaction_type: Line::TYPES[:credit]) }
+        transactions.map { |transaction| Line.new **transaction.merge(transaction_type: Line::TYPES[:credit]) }
       end
 
       # @return [ChinaBank::PayrollTextFile::Line]
