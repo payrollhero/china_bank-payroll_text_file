@@ -29,7 +29,7 @@ module ChinaBank
       # @param [Hash] options
       # @return [ChinaBank::PayrollTextFile::File]
       def generate(**options)
-        File.new options
+        File.new **options
       end
     end
   end
