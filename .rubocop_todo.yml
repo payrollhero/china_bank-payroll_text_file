@@ -104,11 +104,6 @@ Style/BlockDelimiters:
     - 'spec/china_bank/payroll_text_file/line_spec.rb'
     - 'spec/china_bank/payroll_text_file_spec.rb'
 
-# Offense count: 1
-# This cop supports safe autocorrection (--autocorrect).
-Style/Encoding:
-  Exclude:
-    - 'china_bank-payroll_text_file.gemspec'
 
 # Offense count: 2
 # This cop supports safe autocorrection (--autocorrect).
