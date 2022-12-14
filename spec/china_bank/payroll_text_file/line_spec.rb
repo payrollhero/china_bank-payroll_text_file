@@ -1,14 +1,12 @@
 require "spec_helper"
 
 describe ChinaBank::PayrollTextFile::Line do
-
   subject(:line) {
     described_class.new account_type: account_type,
                         account_number: account_number,
                         amount: amount,
                         transaction_type: transaction_type,
                         bank_code: bank_code
-
   }
 
   let(:account_type) { "CA" }
