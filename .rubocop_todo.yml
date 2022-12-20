@@ -16,14 +16,6 @@ Gemspec/DeprecatedAttributeAssignment:
 
 # Offense count: 1
 # This cop supports safe autocorrection (--autocorrect).
-# Configuration parameters: TreatCommentsAsGroupSeparators, ConsiderPunctuation, Include.
-# Include: **/*.gemspec
-Gemspec/OrderedDependencies:
-  Exclude:
-    - 'china_bank-payroll_text_file.gemspec'
-
-# Offense count: 1
-# This cop supports safe autocorrection (--autocorrect).
 # Configuration parameters: Severity, Include.
 # Include: **/*.gemspec
 Gemspec/RequireMFA:
