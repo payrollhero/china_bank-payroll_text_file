@@ -2,14 +2,14 @@ require "spec_helper"
 
 describe ChinaBank::PayrollTextFile::Line do
 
-  subject(:line) {
+  subject(:line) do
     described_class.new account_type: account_type,
                         account_number: account_number,
                         amount: amount,
                         transaction_type: transaction_type,
                         bank_code: bank_code
 
-  }
+  end
 
   let(:account_type) { "CA" }
   let(:account_number) { "123456789012" }

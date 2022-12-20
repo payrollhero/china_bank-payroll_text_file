@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe ChinaBank::PayrollTextFile::File do
   describe "existing clients" do
-    let(:file) {
+    let(:file) do
       described_class.new account_type: "SA",
                           account_number: "1850889513",
                           bank_code: "102",
@@ -30,7 +30,7 @@ describe ChinaBank::PayrollTextFile::File do
                               amount: BigDecimal("21465.85")
                             }
                           ]
-    }
+    end
 
     # File content:
     # *CA2030347812   00000012965.50 C102*
@@ -44,7 +44,7 @@ describe ChinaBank::PayrollTextFile::File do
   end
 
   describe "new clients" do
-    let(:file) {
+    let(:file) do
       ChinaBank::PayrollTextFile.generate account_number: "1850889513",
                                           bank_code: "102",
                                           transactions: [
@@ -67,7 +67,7 @@ describe ChinaBank::PayrollTextFile::File do
                                               amount: BigDecimal("21465.85")
                                             }
                                           ]
-    }
+    end
 
     # File content:
     # *002030347812   00000012965.50 C102*
