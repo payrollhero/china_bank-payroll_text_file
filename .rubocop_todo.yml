@@ -43,15 +43,6 @@ Layout/EmptyLinesAroundBlockBody:
   Exclude:
     - 'spec/china_bank/payroll_text_file/line_spec.rb'
 
-# Offense count: 4
-# This cop supports safe autocorrection (--autocorrect).
-# Configuration parameters: EnforcedStyle, EnforcedStyleForEmptyBraces, SpaceBeforeBlockParameters.
-# SupportedStyles: space, no_space
-# SupportedStylesForEmptyBraces: space, no_space
-Layout/SpaceInsideBlockBraces:
-  Exclude:
-    - 'spec/china_bank/payroll_text_file/file_spec.rb'
-    - 'spec/china_bank/payroll_text_file_spec.rb'
 
 # Offense count: 1
 # This cop supports safe autocorrection (--autocorrect).
