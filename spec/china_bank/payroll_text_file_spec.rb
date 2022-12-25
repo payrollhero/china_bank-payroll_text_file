@@ -38,7 +38,7 @@ describe ChinaBank::PayrollTextFile do
     # *CA110056741211 00000009150.00 C888*
     # *SA110005377015 00000021465.85 C888*
     # *SA1850889513   00000053931.70 D102*
-    let(:expected_content) { File.read "spec/fixtures/payroll_text_file.txt"}
+    let(:expected_content) { File.read "spec/fixtures/payroll_text_file.txt" }
 
     example { expect(file.content).to eq expected_content }
   end
@@ -75,7 +75,7 @@ describe ChinaBank::PayrollTextFile do
     # *00110056741211 00000009150.00 C888*
     # *00110005377015 00000021465.85 C888*
     # *001850889513   00000053931.70 D102*
-    let(:expected_content) { File.read "spec/fixtures/new_payroll_text_file.txt"}
+    let(:expected_content) { File.read "spec/fixtures/new_payroll_text_file.txt" }
 
     example { expect(file.content).to eq expected_content }
   end
