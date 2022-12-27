@@ -73,11 +73,6 @@ Metrics/BlockLength:
 Metrics/MethodLength:
   Max: 11
 
-# Offense count: 1
-# This cop supports safe autocorrection (--autocorrect).
-Style/Encoding:
-  Exclude:
-    - 'china_bank-payroll_text_file.gemspec'
 
 # Offense count: 2
 # This cop supports safe autocorrection (--autocorrect).
