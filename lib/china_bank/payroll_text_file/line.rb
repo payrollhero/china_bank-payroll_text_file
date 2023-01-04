@@ -1,4 +1,4 @@
-require "active_model"
+require 'active_model'
 
 module ChinaBank
   module PayrollTextFile
@@ -6,10 +6,10 @@ module ChinaBank
     class Line
       include ActiveModel::Model
 
-      AMOUNT_RANGE = BigDecimal("0").. BigDecimal("99999999999.99")
+      AMOUNT_RANGE = BigDecimal('0').. BigDecimal('99999999999.99')
       TYPES = {
-        credit: "C",
-        debit: "D"
+        credit: 'C',
+        debit: 'D'
       }
 
       attr_accessor :account_type,
@@ -18,10 +18,10 @@ module ChinaBank
                     :transaction_type,
                     :bank_code
 
-      validates :account_type, inclusion: { in: ["CA", "SA", "00"], message: "must be either CA, SA, or 00" }
+      validates :account_type, inclusion: { in: ['CA', 'SA', '00'], message: 'must be either CA, SA, or 00' }
       validates :account_number, length: { in: 10..12 }, numericality: { only_integer: true }
-      validates :amount, inclusion: { in: AMOUNT_RANGE, message: "must be between 0.00 to 99,999,999,999.99" }
-      validates :transaction_type, inclusion: { in: TYPES.values, message: "must be either C or D" }
+      validates :amount, inclusion: { in: AMOUNT_RANGE, message: 'must be between 0.00 to 99,999,999,999.99' }
+      validates :transaction_type, inclusion: { in: TYPES.values, message: 'must be either C or D' }
       validates :bank_code, length: { is: 3 }, numericality: { only_integer: true }
       validates :account_type, :account_number, :amount, :transaction_type, :bank_code, presence: true
 
@@ -30,7 +30,7 @@ module ChinaBank
       # @param [BigDecimal] amount
       # @param [String] transaction_type
       # @param [String] bank_code
-      def initialize(account_type: "00", account_number:, amount:, transaction_type:, bank_code: "888")
+      def initialize(account_type: '00', account_number:, amount:, transaction_type:, bank_code: '888')
         @account_number = account_number
         @account_type = account_type
         @bank_code = bank_code
@@ -59,11 +59,11 @@ module ChinaBank
       private
 
       def terminator_character
-        "*"
+        '*'
       end
 
       def spacer
-        " "
+        ' '
       end
 
       def formatted_account_number
@@ -71,7 +71,7 @@ module ChinaBank
       end
 
       def formatted_amount
-        "%014.2f" % amount
+        '%014.2f' % amount
       end
     end
   end

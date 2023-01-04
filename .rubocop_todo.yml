@@ -155,22 +155,6 @@ Style/RedundantPercentQ:
   Exclude:
     - 'china_bank-payroll_text_file.gemspec'
 
-# Offense count: 147
-# This cop supports safe autocorrection (--autocorrect).
-# Configuration parameters: EnforcedStyle, ConsistentQuotesInMultiline.
-# SupportedStyles: single_quotes, double_quotes
-Style/StringLiterals:
-  Exclude:
-    - 'Rakefile'
-    - 'bin/console'
-    - 'china_bank-payroll_text_file.gemspec'
-    - 'lib/china_bank/payroll_text_file.rb'
-    - 'lib/china_bank/payroll_text_file/file.rb'
-    - 'lib/china_bank/payroll_text_file/line.rb'
-    - 'lib/china_bank/payroll_text_file/version.rb'
-    - 'spec/china_bank/payroll_text_file/file_spec.rb'
-    - 'spec/china_bank/payroll_text_file/line_spec.rb'
-    - 'spec/china_bank/payroll_text_file_spec.rb'
 
 # Offense count: 1
 # This cop supports safe autocorrection (--autocorrect).

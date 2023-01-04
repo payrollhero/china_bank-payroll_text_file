@@ -1,6 +1,6 @@
-require "china_bank/payroll_text_file/version"
-require "bigdecimal"
-require "active_support"
+require 'china_bank/payroll_text_file/version'
+require 'bigdecimal'
+require 'active_support'
 
 module ChinaBank
   # Generates a payroll text file compatible with China Bank Auto Credit Arrangement (ACA).

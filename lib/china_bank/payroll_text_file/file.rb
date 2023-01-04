@@ -1,4 +1,4 @@
-require "active_support/core_ext/enumerable"
+require 'active_support/core_ext/enumerable'
 
 module ChinaBank
   module PayrollTextFile
@@ -8,7 +8,7 @@ module ChinaBank
       # @param [String] account_type
       # @param [String] bank_code
       # @param [Array<Hash>] transactions
-      def initialize(account_number:, account_type: "00", bank_code: "888", transactions: [])
+      def initialize(account_number:, account_type: '00', bank_code: '888', transactions: [])
         @account_number = account_number
         @account_type = account_type
         @bank_code = bank_code

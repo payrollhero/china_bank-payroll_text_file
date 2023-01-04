@@ -1,7 +1,7 @@
 # :nocov:
 module ChinaBank
   module PayrollTextFile
-    VERSION = "1.1.0"
+    VERSION = '1.1.0'
   end
 end
 # :nocov:
