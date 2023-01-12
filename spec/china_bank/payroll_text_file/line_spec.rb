@@ -17,7 +17,7 @@ describe ChinaBank::PayrollTextFile::Line do
   let(:transaction_type) { "C" }
   let(:bank_code) { "102" }
 
-  example { expect("#{line}").to eq "*CA123456789012 99999999999.99 C102*" }
+  example { expect(line.to_s).to eq "*CA123456789012 99999999999.99 C102*" }
 
   describe "validations" do
     describe "valid" do
