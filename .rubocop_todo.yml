@@ -49,12 +49,6 @@ Layout/SpaceInsideRangeLiteral:
   Exclude:
     - 'lib/china_bank/payroll_text_file/line.rb'
 
-# Offense count: 2
-# This cop supports safe autocorrection (--autocorrect).
-Lint/AmbiguousOperator:
-  Exclude:
-    - 'lib/china_bank/payroll_text_file.rb'
-    - 'lib/china_bank/payroll_text_file/file.rb'
 
 # Offense count: 1
 # Configuration parameters: AllowComments, AllowNil.
