@@ -94,24 +94,6 @@ Style/FormatString:
   Exclude:
     - 'lib/china_bank/payroll_text_file/line.rb'
 
-# Offense count: 12
-# This cop supports unsafe autocorrection (--autocorrect-all).
-# Configuration parameters: EnforcedStyle.
-# SupportedStyles: always, always_true, never
-Style/FrozenStringLiteralComment:
-  Exclude:
-    - 'Gemfile'
-    - 'Rakefile'
-    - 'bin/console'
-    - 'china_bank-payroll_text_file.gemspec'
-    - 'lib/china_bank/payroll_text_file.rb'
-    - 'lib/china_bank/payroll_text_file/file.rb'
-    - 'lib/china_bank/payroll_text_file/line.rb'
-    - 'lib/china_bank/payroll_text_file/version.rb'
-    - 'spec/china_bank/payroll_text_file/file_spec.rb'
-    - 'spec/china_bank/payroll_text_file/line_spec.rb'
-    - 'spec/china_bank/payroll_text_file_spec.rb'
-    - 'spec/spec_helper.rb'
 
 # Offense count: 1
 # This cop supports safe autocorrection (--autocorrect).
