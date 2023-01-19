@@ -6,11 +6,11 @@ module ChinaBank
     class Line
       include ActiveModel::Model
 
-      AMOUNT_RANGE = BigDecimal("0").. BigDecimal("99999999999.99")
+      AMOUNT_RANGE = (BigDecimal("0").. BigDecimal("99999999999.99")).freeze
       TYPES = {
         credit: "C",
         debit: "D"
-      }
+      }.freeze
 
       attr_accessor :account_type,
                     :account_number,
