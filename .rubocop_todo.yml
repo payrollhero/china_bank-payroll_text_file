@@ -52,11 +52,6 @@ Layout/EmptyLinesAroundBlockBody:
   Exclude:
     - 'spec/china_bank/payroll_text_file/line_spec.rb'
 
-# Offense count: 1
-# This cop supports safe autocorrection (--autocorrect).
-Layout/SpaceInsideRangeLiteral:
-  Exclude:
-    - 'lib/china_bank/payroll_text_file/line.rb'
 
 # Offense count: 2
 # This cop supports safe autocorrection (--autocorrect).

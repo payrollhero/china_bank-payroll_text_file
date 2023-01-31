@@ -6,7 +6,7 @@ module ChinaBank
     class Line
       include ActiveModel::Model
 
-      AMOUNT_RANGE = BigDecimal("0").. BigDecimal("99999999999.99")
+      AMOUNT_RANGE = BigDecimal("0")..BigDecimal("99999999999.99")
       TYPES = {
         credit: "C",
         debit: "D"
