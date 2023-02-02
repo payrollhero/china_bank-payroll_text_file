@@ -82,12 +82,6 @@ Style/Encoding:
   Exclude:
     - 'china_bank-payroll_text_file.gemspec'
 
-# Offense count: 2
-# This cop supports safe autocorrection (--autocorrect).
-Style/ExpandPathArguments:
-  Exclude:
-    - 'china_bank-payroll_text_file.gemspec'
-    - 'spec/spec_helper.rb'
 
 # Offense count: 1
 # This cop supports safe autocorrection (--autocorrect).
