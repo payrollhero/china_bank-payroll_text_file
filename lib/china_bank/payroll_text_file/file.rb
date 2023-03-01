@@ -43,7 +43,7 @@ module ChinaBank
                   :transactions
 
       def total
-        transactions.sum(BigDecimal 0) { |transaction| transaction.fetch :amount }
+        transactions.sum(BigDecimal '0') { |transaction| transaction.fetch :amount }
       end
 
       def new_line

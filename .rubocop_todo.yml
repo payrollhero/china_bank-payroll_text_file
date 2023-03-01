@@ -62,11 +62,6 @@ Lint/SuppressedException:
 Metrics/MethodLength:
   Max: 11
 
-# Offense count: 1
-# This cop supports safe autocorrection (--autocorrect).
-Performance/BigDecimalWithNumericArgument:
-  Exclude:
-    - 'lib/china_bank/payroll_text_file/file.rb'
 
 # Offense count: 5
 # Configuration parameters: Prefixes, AllowedPatterns.
