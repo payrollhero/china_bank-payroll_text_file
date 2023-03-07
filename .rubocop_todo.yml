@@ -92,11 +92,6 @@ Rails/I18nLocaleTexts:
   Exclude:
     - 'lib/china_bank/payroll_text_file/line.rb'
 
-# Offense count: 1
-# This cop supports safe autocorrection (--autocorrect).
-Style/Encoding:
-  Exclude:
-    - 'china_bank-payroll_text_file.gemspec'
 
 # Offense count: 2
 # This cop supports safe autocorrection (--autocorrect).
