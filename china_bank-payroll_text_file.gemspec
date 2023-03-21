@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Ronald Maravilla"]
   spec.email         = ["rmaravilla@payrollhero.com"]
 
-  spec.summary       = %q{A payroll text file generator for China Bank}
-  spec.description   = %q{A payroll text file generator for China Bank}
+  spec.summary       = 'A payroll text file generator for China Bank'
+  spec.description   = 'A payroll text file generator for China Bank'
   spec.homepage      = "https://github.com/payrollhero/china_bank-payroll_text_file"
   spec.license       = "BSD-3-Clause"
 
