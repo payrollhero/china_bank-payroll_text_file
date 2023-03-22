@@ -30,7 +30,7 @@ module ChinaBank
       # @param [BigDecimal] amount
       # @param [String] transaction_type
       # @param [String] bank_code
-      def initialize(account_type: "00", account_number:, amount:, transaction_type:, bank_code: "888")
+      def initialize(account_number:, amount:, transaction_type:, account_type: "00", bank_code: "888")
         @account_number = account_number
         @account_type = account_type
         @bank_code = bank_code
