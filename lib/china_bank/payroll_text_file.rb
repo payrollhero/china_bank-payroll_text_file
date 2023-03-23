@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require "china_bank/payroll_text_file/version"
 require "bigdecimal"
 require "active_support"
