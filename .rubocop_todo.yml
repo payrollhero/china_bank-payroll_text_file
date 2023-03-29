@@ -37,11 +37,6 @@ Gemspec/RequiredRubyVersion:
   Exclude:
     - 'china_bank-payroll_text_file.gemspec'
 
-# Offense count: 1
-# This cop supports safe autocorrection (--autocorrect).
-Layout/EmptyLineAfterMagicComment:
-  Exclude:
-    - 'china_bank-payroll_text_file.gemspec'
 
 # Offense count: 1
 # Configuration parameters: AllowComments, AllowNil.
