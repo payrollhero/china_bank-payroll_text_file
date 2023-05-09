@@ -74,13 +74,6 @@ RSpec/DescribedClass:
 RSpec/NestedGroups:
   Max: 4
 
-# Offense count: 1
-# This cop supports safe autocorrection (--autocorrect).
-# Configuration parameters: EnforcedStyle.
-# SupportedStyles: not_to, to_not
-RSpec/NotToNot:
-  Exclude:
-    - 'spec/china_bank/payroll_text_file/line_spec.rb'
 
 # Offense count: 2
 RSpec/RepeatedExampleGroupDescription:
