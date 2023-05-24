@@ -32,13 +32,21 @@ describe ChinaBank::PayrollTextFile::Line do
       context "too short" do
         let(:account_number) { "01" }
 
-        example { expect { line }.to raise_exception ArgumentError, "Account number is too short (minimum is 10 characters)" }
+        example do
+          expect do
+            line
+          end.to raise_exception ArgumentError, "Account number is too short (minimum is 10 characters)"
+        end
       end
 
       context "too long" do
         let(:account_number) { "1234567890123" }
 
-        example { expect { line }.to raise_exception ArgumentError, "Account number is too long (maximum is 12 characters)" }
+        example do
+          expect do
+            line
+          end.to raise_exception ArgumentError, "Account number is too long (maximum is 12 characters)"
+        end
       end
 
       context "invalid character" do
@@ -64,7 +72,11 @@ describe ChinaBank::PayrollTextFile::Line do
       context "incorrect length" do
         let(:bank_code) { "01" }
 
-        example { expect { line }.to raise_exception ArgumentError, "Bank code is the wrong length (should be 3 characters)" }
+        example do
+          expect do
+            line
+          end.to raise_exception ArgumentError, "Bank code is the wrong length (should be 3 characters)"
+        end
       end
 
       context "invalid character" do
