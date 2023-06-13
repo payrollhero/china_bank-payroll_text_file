@@ -18,7 +18,7 @@ module ChinaBank
                     :transaction_type,
                     :bank_code
 
-      validates :account_type, inclusion: { in: ["CA", "SA", "00"], message: "must be either CA, SA, or 00" }
+      validates :account_type, inclusion: { in: %w[CA SA 00], message: "must be either CA, SA, or 00" }
       validates :account_number, length: { in: 10..12 }, numericality: { only_integer: true }
       validates :amount, inclusion: { in: AMOUNT_RANGE, message: "must be between 0.00 to 99,999,999,999.99" }
       validates :transaction_type, inclusion: { in: TYPES.values, message: "must be either C or D" }
