@@ -181,12 +181,6 @@ Style/StringLiterals:
     - 'spec/china_bank/payroll_text_file/line_spec.rb'
     - 'spec/china_bank/payroll_text_file_spec.rb'
 
-# Offense count: 1
-# This cop supports safe autocorrection (--autocorrect).
-# Configuration parameters: MinSize, WordRegex.
-# SupportedStyles: percent, brackets
-Style/WordArray:
-  EnforcedStyle: brackets
 
 # Offense count: 3
 # This cop supports safe autocorrection (--autocorrect).
